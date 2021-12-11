@@ -277,11 +277,7 @@ export class MultiSelect extends Component {
             //tab
             case 9:
                 if (this.state.overlayVisible) {
-                    const firstFocusableElement = DomHandler.getFirstFocusableElement(this.overlayRef.current);
-                    if (firstFocusableElement) {
-                        firstFocusableElement.focus();
-                        event.preventDefault();
-                    }
+                    this.hide();
                 }
                 break;
 

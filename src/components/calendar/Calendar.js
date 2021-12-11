@@ -396,7 +396,7 @@ export class Calendar extends Component {
             //tab
             case 9: {
                 if (this.state.overlayVisible) {
-                    this.trapFocus(event);
+                    this.hideOverlay();
                 }
 
                 if (this.props.touchUI) {
